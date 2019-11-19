@@ -5,11 +5,22 @@ var md = window.matchMedia( "(min-width: 1000px)" );
   if (md.matches) {
 
     var cursor = document.getElementById('cursor');
+    var yscroll = 0;
+
+    window.onscroll = function (e) {yscroll = window.scrollY; };
+
+    // info.style.top = ( y + yscroll ) + 'px';
+
     document.addEventListener ('mousemove', function(e){
       var x = e.clientX;
       var y = e.clientY;
       cursor.style.left = x + 'px';
-      cursor.style.top = y + 'px';
+      cursor.style.top = ( y + yscroll ) + 'px';
+    })
+
+    document.addEventListener ('onscroll', function(e){
+      var y = e.clientY;
+      cursor.style.top = ( y + yscroll ) + 'px';
     })
 
 
