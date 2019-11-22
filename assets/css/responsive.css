@@ -13,13 +13,11 @@
   }
 
   #cursor {
-    position: absolute;
+    position: fixed;
     z-index: 100;
     width: 10px;
     height: 10px;
     background-color: #13e3db;
-    transition: 0.01s;
-    transform: translate(-50%,-50%);
     border-radius: 50px;
     pointer-events: none;
     background-blend-mode: multiply;

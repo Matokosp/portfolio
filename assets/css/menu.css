@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 70%;
+  height: 60%;
 }
 
 .menu_li {
@@ -93,6 +93,13 @@
   background-color: #fff;
 }
 
+.menu-description {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  font-size: 0.5rem;
+}
+
 
 @media (min-width: 1000px) and (orientation: landscape) {
 
@@ -108,7 +115,7 @@
   }
 
   .menu_logo {
-    width: 50px;
+    width: 45px;
   }
 
   .menu_logo.dsktp {
@@ -184,5 +191,14 @@
   .pruebas_menu_link-active {
     font-weight: 700;
     font-size: 0.8rem;
+  }
+
+  .menu-description {
+    display: inline-block;
+    text-align: left;
+    position: absolute;
+    left: 100px;
+    top: 25px;
+    color: #ec1c24;
   }
 }

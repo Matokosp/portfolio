@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Matias Salinas / Designer</title>
     <link rel="stylesheet" href="https://use.typekit.net/usc8fsv.css">
     <link rel="stylesheet" href="assets/css/menu.css">
@@ -11,14 +12,15 @@
   <body>
     <!-- MENU -->
     <nav class="menu">
-      <a href="i.html"><img class="menu_logo dsktp" src="assets/images/logo.png" alt=""></a>
+      <a href="index.html"><img class="menu_logo dsktp" src="assets/images/logo.png" alt=""></a>
       <a href="index.html"><img class="menu_logo mobile" src="assets/images/logo-mobile.png" alt=""></a>
+      <p class="menu-description">graphic design <br> front-end design</p>
       <ul>
         <li class="menu_li"><a href="#header">HOME</a></li>
-        <li class="menu_li"><a href="#servicios">ME</a></li>
-        <li class="menu_li"><a href="#nosotros">WORK</a></li>
-        <li class="menu_li"><a href="#clientes">PHOTOGRAPHY</a></li>
-        <li class="menu_li"><a href="#contacto">CONTACT</a></li>
+        <li class="menu_li"><a href="#me">ME</a></li>
+        <li class="menu_li"><a href="#work">WORK</a></li>
+        <li class="menu_li"><a href="#photo">PHOTOGRAPHY</a></li>
+        <li class="menu_li"><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
     <div class="hamburger_div" id="hamburger">
@@ -27,13 +29,14 @@
         <div class="menuicon" id="menuIconThird"></div>
     </div>
     <div id="cursor"></div>
-    <header>
+    <header id="header">
       <h1 class="header_title">Matias <br> Salinas</h1>
       <div class="me_img">
         <img class="me_draw" src="assets/images/draw.png" alt="">
         <div id="circle" class="circle draw_circle"></div>
       </div>
-      <div class="next-button">me</div>
+      <a class="next-button-link" href="#me"><div class="next-button">me</div></a>
+      <div class="next-button-back" id="al"></div>
     </header>
     <main>
       <section class="content-02 snap" id="me">

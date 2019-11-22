@@ -1,27 +1,50 @@
+// SCROLL WINDOW TO ID
 
+$('a[href^="#"]').on('click', function(event) {
+		var target = $(this.getAttribute('href'));
+		if( target.length ) {
+				event.preventDefault();
+				$('html, body').stop().animate({
+						scrollTop: target.offset().top
+				}, 1000);
+		}
+});
 
 var md = window.matchMedia( "(min-width: 1000px)" );
 
   if (md.matches) {
 
-    var cursor = document.getElementById('cursor');
-    var yscroll = 0;
+    // var cursor = document.getElementById('cursor');
+    // var yscroll = 0;
+    //
+    // window.onscroll = function (e) {yscroll = window.scrollY; };
+    //
+    // // info.style.top = ( y + yscroll ) + 'px';
+    //
+    // document.addEventListener ('mousemove', function(e){
+    //   var x = e.clientX;
+    //   var y = e.clientY;
+    //   cursor.style.left = x + 'px';
+    //   cursor.style.top = ( y + yscroll ) + 'px';
+    // })
+    //
+    // document.addEventListener ('onscroll', function(e){
+    //   var y = e.clientY;
+    //   cursor.style.top = ( y + yscroll ) + 'px';
+    // })
 
-    window.onscroll = function (e) {yscroll = window.scrollY; };
 
-    // info.style.top = ( y + yscroll ) + 'px';
+    $(document).on('mousemove', function(e) {
+      $('#cursor').css({
+        left: e.clientX,
+        top: e.clientY,
+      });
+    });
 
-    document.addEventListener ('mousemove', function(e){
-      var x = e.clientX;
-      var y = e.clientY;
-      cursor.style.left = x + 'px';
-      cursor.style.top = ( y + yscroll ) + 'px';
-    })
+    $(window).on('scroll', function(e) {
 
-    document.addEventListener ('onscroll', function(e){
-      var y = e.clientY;
-      cursor.style.top = ( y + yscroll ) + 'px';
-    })
+    });
+
 
 
     var circle = document.getElementsByClassName('circle');
