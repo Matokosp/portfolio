@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Matias Salinas / Designer</title>
     <link rel="stylesheet" href="https://use.typekit.net/usc8fsv.css">
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -23,12 +24,15 @@
         <li class="menu_li"><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
-    <div class="hamburger_div" id="hamburger">
-        <div class="menuicon" id="menuIconFirst"></div>
-        <div class="menuicon" id="menuIconSecond"></div>
-        <div class="menuicon" id="menuIconThird"></div>
+    <div class="menu_scroll-mobile">
+      <div class="hamburger_div" id="hamburger">
+          <div class="menuicon" id="menuIconFirst"></div>
+          <div class="menuicon" id="menuIconSecond"></div>
+          <div class="menuicon" id="menuIconThird"></div>
+      </div>
     </div>
     <div id="cursor"></div>
+    <div id="cursorRound"></div>
     <header id="header">
       <h1 class="header_title">Matias <br> Salinas</h1>
       <div class="me_img">
@@ -39,90 +43,111 @@
       <div class="next-button-back" id="al"></div>
     </header>
     <main>
-      <section class="content-02 snap" id="me">
-  			<div class="me__section--responsive"></div>
-  			<div class="me__section">
+      <section class="" id="me">
+  			<div class="me_section--responsive"></div>
+  			<div class="me_section">
   				<video autoplay muted loop class="embed-responsive-item" src="assets/images/reel.mp4" id="myVideo"></video>
   			</div>
   			<div class="timeline">
-  				<div class="row timeline__title">
-  					<div class="col-xs-offset-3 col-md-offset-2">
+  				<div class="timeline_title">
+  					<div class="">
   						<h3>I'm Matias, a freelance <br>
-  							developer & designer.</h3>
+  							front-end developer & designer.</h3>
   					</div>
   				</div>
-  				<div class="row timeline__event">
-  					<div class="col-xs-3 col-md-offset-1 col-md-1 timeline__event_date">
-  						<div class="timeline__event_block"></div>
-  						<span>1993</span>
-  					</div>
-  					<div class="col-xs-7 col-md-5 timeline__event_description">
-  						<p>Born Santiago, CHILE.</p>
-  					</div>
+  				<div class="timeline_event">
+  					<div class="timeline_event_block"></div>
+  					<span class="timeline_event_year">1993</span>
+            <div class="timeline_event_list">
+				       <p class="timeline_event_description">Born Santiago, Chile</p>
+            </div>
   				</div>
-  				<div class="row timeline__event">
-  					<div class="col-xs-3 col-md-offset-1 col-md-1 timeline__event_date">
-  						<div class="timeline__event_block"></div>
-  						<span>2017</span>
-  					</div>
-  					<div class="col-xs-7 col-md-5 timeline__event_description">
-  						<p>Design Graduate School</p>
-  					</div>
+  				<div class="timeline_event">
+  					<div class="timeline_event_block"></div>
+  					<span class="timeline_event_year">2017</span>
+            <div class="timeline_event_list">
+		           <p class="timeline_event_description">Design Graduate School</p>
+            </div>
   				</div>
-  				<div class="row timeline__event">
-  					<div class="col-xs-3 col-md-offset-1 col-md-1 timeline__event_date">
-  						<div class="timeline__event_block"></div>
-  						<span>2018</span>
-  					</div>
-  					<div class="col-xs-7 col-md-5 timeline__event_description">
-  						<p>Front-End Bootcamp in Desafío Latam developers academy</p>
-  						<p>External consultant in Zooma Diseño, design studio
-  						based in Santiago, Chile.</p>
-  						<p>Freelancer experience in cooperation with several agenies,
-  						companies and professionals from Chile.</p>
-  					</div>
+  				<div class="timeline_event">
+  						<div class="timeline_event_block"></div>
+  						<span class="timeline_event_year">2018</span>
+              <div class="timeline_event_list">
+                <p class="timeline_event_description">Front-End Bootcamp in Desafío Latam developers academy</p>
+    						<p class="timeline_event_description">External consultant in Zooma Diseño, design studio
+    						based in Santiago, Chile.</p>
+    						<p class="timeline_event_description">Freelancer experience in cooperation with several agenies,
+    						companies and professionals from Chile.</p>
+              </div>
+
   				</div>
   			</div>
-  			<div class="row skills">
-  				<div class="skills__text col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-5">
-  					<h3>Skills</h3>
-  					<p>The area that I enjoy the most is front-end web development,
-  						taking a close approach with the client in order to bring
-  						his vision to the design.
+  			<div class="skills" id="skills">
+  				<div class="skills_text">
+  					<h3 class="skills_title">Skills</h3>
+  					<p>Taking a close approach with my clients in order to bring
+  						their vision to the design is my main goal.
   						<br><br>
   						As a designer I’m insterested in graphic solutions and
-  						visual information, which comes in handy for the web
-  						design process aswell. Some of my work also includes
-  						branding for companies or campaigns.
+  						visual information, key components I use for branding and web
+  						design process.
   						<br><br>
   						As a side passion of mine, I’ve come to develop an
-  						interest in portrait photography, especially the ones
-  						placed in urban environments.</p>
+  						interest in portrait photography, paying special attention to the
+              urban setting.</p>
   				</div>
-  				<div class="skills__cat col-xs-offset-1 col-xs-10 col-md-2">
-  					<div class="skills__cat_item">
-  						<div class="skills__cat_item-logo">
-  							<img src="assets/images/design-icon-white.png">
+  				<div class="skills__cat">
+  					<div class="skills__cat_item design_cat">
+              <h4 class="skills__cat_item-title-back design_title-back">Design</h4>
+  						<h4 class="skills__cat_item-title">Design</h4>
+  						<div class="skills__cat_item-list">
+  							<div class="lettering_skill">
+                  <img class="skill-img-color" src="assets/images/ai-logo-color.png" alt="">
+                  <img class="skill-img" src="assets/images/ai-logo.png" alt="">
+                  <span class="letterings rotating">illustrator - illustrator</span>
+                </div>
+  							<div class="lettering_skill">
+                  <img class="skill-img-color" src="assets/images/ps-logo-color.png" alt="">
+                  <img class="skill-img" src="assets/images/ps-logo.png" alt="">
+                  <span class="letterings rotating">photoshop - photoshop</span>
+                </div>
+  							<div class="lettering_skill">
+                  <img class="skill-img-color" src="assets/images/lr-logo-color.png" alt="">
+                  <img class="skill-img" src="assets/images/lr-logo.png" alt="">
+                  <span class="letterings rotating">lightroom - lightroom</span>
+                </div>
+  							<div class="lettering_skill">
+                  <img class="skill-img-color" src="assets/images/ae-logo-color.png" alt="">
+                  <img class="skill-img" src="assets/images/ae-logo.png" alt="">
+                  <span class="letterings rotating">after effects - after effects</span>
+                </div>
   						</div>
-  						<h4 class="skills__cat_item-title">design</h4>
-  						<ul class="skills__cat_item-list">
-  							<li>Illustrator</li>
-  							<li>Photoshop</li>
-  							<li>Lightroom</li>
-  							<li>After Effects</li>
-  						</ul>
   					</div>
-  					<div class="skills__cat_item">
-  						<div class="skills__cat_item-logo">
-  							<img src="assets/images/web-icon-white.png">
+  					<div class="skills__cat_item design_web">
+              <h4 class="skills__cat_item-title-back web_title-back">WEB</h4>
+  						<h4 class="skills__cat_item-title">Web</h4>
+  						<div class="skills__cat_item-list">
+                <div class="lettering_skill">
+                  <img class="skill-img-color" src="assets/images/html-icon-color.png" alt="">
+                  <img class="skill-img" src="assets/images/html-icon.png" alt="">
+                  <span class="letterings rotating">HTML - HTML - HTML</span>
+                </div>
+  							<div class="lettering_skill">
+                  <img class="skill-img-color" src="assets/images/css-icon-color.png" alt="">
+                  <img class="skill-img" src="assets/images/css-icon.png" alt="">
+                  <span class="letterings rotating">CSS - CSS - CSS - CSS</span>
+                </div>
+  							<div class="lettering_skill">
+                  <img class="skill-img-color" src="assets/images/lr-logo-color.png" alt="">
+                  <img class="skill-img" src="assets/images/lr-logo.png" alt="">
+                  <span class="letterings rotating">jQuery - jQuery</span>
+                </div>
+  							<div class="lettering_skill">
+                  <img class="skill-img-color" src="assets/images/ae-logo-color.png" alt="">
+                  <img class="skill-img" src="assets/images/ae-logo.png" alt="">
+                  <span class="letterings rotating">wordpress - wordpress</span>
+                </div>
   						</div>
-  						<h4 class="skills__cat_item-title">web</h4>
-  						<ul class="skills__cat_item-list">
-  							<li>HTML</li>
-  							<li>CSS</li>
-  							<li>jQuery</li>
-  							<li>Wordpress</li>
-  						</ul>
   					</div>
   					<div class="skills__cat_item">
   						<div class="skills__cat_item-logo">
@@ -133,6 +158,15 @@
   				</div>
   			</div>
   		</section>
+      <section id="work">
+
+      </section>
+      <section id="photography">
+
+      </section>
+      <section id="contact">
+
+      </section>
     </main>
     <footer>
     </footer>
@@ -140,6 +174,7 @@
 			  src="https://code.jquery.com/jquery-3.4.1.js"
 			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
 			  crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.lettering.js" charset="utf-8"></script>
     <script src="assets/js/myscript.js" charset="utf-8"></script>
   </body>
 </html>
